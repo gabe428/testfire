@@ -3,13 +3,14 @@
     <script src="/public/lib/js/jquery-1.11.1.min.js"></script>
     <script src="/public/lib/js/bootstrap.min.js"></script>
     <link href="/public/lib/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="/public/css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">SignUp</a>
+      <a class="navbar-brand" href="/app/home">HomeOfLoli</a>
     </div>
     <ul class="nav navbar-nav">
 
@@ -20,14 +21,17 @@
     </ul>
   </div>
 </nav>
+<div id=signupForm>
+  <div>
+    <label class=passBtn for="username">Login</label><input type="text" class="signforElements" id="username"></input></div>
+  <div>
+    <label class=passBtn for="password">Password</label><input type="password" class="signforElements" id="password"></input>
+  </div>
+  <div>
+    <button type="button" class="signforButton btn btn-primary" id="signupButton">SignMeUpPLZDADDY(yeetOnTheBtn)</button>
+  </div>
+</div>
 
-<input type="text" id="username"></input>
-<br>
-<br>
-<input type="password" id="password"></input>
-<br>
-<br>
-<button type="button" id="signupButton">SignMeUpPLZDADDY(YEET on the button)</button>
 <script>
 $("#signupButton").on("click", function() {
   var username = $("#username").val();
