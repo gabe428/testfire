@@ -1,0 +1,29 @@
+{
+  "name": "furry-octo-funicular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabe428/furry-octo-funicular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabe428/furry-octo-funicular/issues"
+  },
+  "homepage": "https://github.com/gabe428/furry-octo-funicular#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  },
+  "engines": {
+    "node": "11.6.0"
+  }
+}
