@@ -1,12 +1,15 @@
 require('dotenv').config()
 
-var express = require("express");
-var app = express();
-var path = require('path');
-var PORT = process.env.PORT || 3000;
-var db = require('./config/db.js');
-var models = require('./models')(db);
-var bodyParser = require("body-parser");
+const express = require("express");
+const app = express();
+const path = require('path');
+let PORT = process.env.PORT || 0008;
+const db = require('./config/db.js');
+// const models = require('./models')(db);
+const server = require('http').Server(app);
+const bodyParser = require("body-parser");
+const exphbs = require('express-handlebars');
+
 
 
 app.use(bodyParser.json({ limit: '1mb' }));
@@ -14,7 +17,21 @@ app.use(bodyParser.urlencoded({
     extended: false,
     limit: '1mb'
 }));
+
 app.use('/public', express.static(path.join(__dirname, 'public')));
+
+app.set('views', `${__dirname}/views`);
+
+app.engine('hbs', exphbs({
+    extname: '.hbs',
+    defaultLayout: "main",
+    layoutsDir: `${__dirname}/views/layouts`,
+    partialsDir: [
+        `${__dirname}/views/partials`,
+    ]
+}));
+
+app.set('view engine', '.hbs');
 
 var routes = require('./routes')(app);
 app.use("/", routes);
@@ -25,7 +42,11 @@ app.use("/", function(req, res) {
 });
 
 
+const arg1 = process.argv[2];
+if (!isNaN(arg1)) {
+    PORT = arg1;
+}
 
-app.listen(PORT, function() {
+server.listen(PORT, function() {
 	console.log("app is listening");
 });

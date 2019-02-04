@@ -1,0 +1,77 @@
+<div class="signup-background" class="form-control">
+      
+    <div id=signupForm>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" class="signforElements, form-control" id="firstname"></input>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" class="signforElements, form-control" id="lastname"></input>
+        </div>
+        <div>
+            <label for="InputEmail1">Email address</label>
+            <input type="email" class="signforElements, form-control" id="InputEmail1" aria-describedby="emailHelp">
+            {{!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> --}}
+        </div>
+        <div>
+            <label for="username">Screen Name</label>
+            <input type="text" class="signforElements, form-control" id="username"></input>
+        </div>
+        <div>
+            <label class=passBtn for="password">Password</label>
+            <input type="password" class="signforElements, form-control" id="password"></input>
+        </div>
+        <div>
+            <button type="button" class="signforButton btn btn-primary" id="signupButton">SignMeUpPLZDADDY</button>
+        </div>
+        <div>
+            <br>
+            <br>
+        </div>
+        <div>
+            <button data-toggle="modal" data-target="#signinModal" type="button" class="signinButton btn btn-primary" id="signinBtn">SIGN IN</button>
+        </div>
+    </div>
+     
+    <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" id="m1">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4></h4>
+                </div>
+                <div class="modal-body">
+                    <center>
+                    <h3 class="media-heading">Sign In <small>Prj.Tanjoubi</small></h3>
+                    <br>
+                    <div>
+                        <label for="InputEmail1">Email address</label><input type="email" class="signforElements, form-control" id="inputEmail2" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <label class=passBtn for="password">Password</label><input type="password" class="signforElements, form-control" id="password"></input>
+                    </div>
+
+ 
+
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-center"><strong>お客様、力の言葉には：金持ちで死んだら間違い人間だよ</strong><br>
+                        </p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="/public/js/signup.js"></script>

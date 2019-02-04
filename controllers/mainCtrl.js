@@ -4,18 +4,26 @@ var home = function(req, res){
   console.log("its time to rape homey penis");
 res.sendFile(path.join(__dirname, '/../views/index.html'));
 };
+
+var home = function(req, res){
+  res.render('index');
+};
+
 var signup = function(req, res){
-  console.log("its time to rape homey penis");
-res.sendFile(path.join(__dirname, '/../views/signup.html'));
+  res.render('signup');
 };
+
 var profile = function(req, res){
-  console.log("loaded profile");
-res.sendFile(path.join(__dirname, '/../views/profile.html'));
+  res.render('profile');
 };
+
 var settings = function(req, res){
-  console.log("loaded settings");
-res.sendFile(path.join(__dirname, '/../views/settings.html'));
+  res.render('settings');
 };
+
+
+
+
 
 module.exports = {
   home: home,

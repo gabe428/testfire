@@ -1,0 +1,64 @@
+/* .signforElements {
+    margin: 10px;
+    background-color: plum;
+    width: 250px;
+    color: whitesmoke;
+} */
+
+::placeholder {
+    color: aqua;
+}
+
+.form-control {
+    margin: 10px;
+    background-color: plum;
+    width: 250px;
+    color: whitesmoke;
+}
+
+ .signforButton  {
+    margin-top: 20px;
+    border-color: black;
+    border-width: 1px;
+    width: 250px;
+    left: 45%;
+    margin-left: -125px;
+    position: relative;
+    
+}
+
+#signinBtn {
+    border-color: black;
+    border-width: 1px;
+    width: 200px;
+    left: 54%;
+    margin-left: -125px;
+    position: relative;
+}
+
+#signupForm {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    position: relative;
+    color: whitesmoke;
+    
+}
+
+.signinButton {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    position: relative;
+}
+
+#m1 {
+    background-color: dark;
+}
+
+.signup-background {
+    background-image: url("/public/img/galaxpop2.jpg");
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+}
