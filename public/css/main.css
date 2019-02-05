@@ -45,6 +45,16 @@
     
 }
 
+.navbar-header {
+    position: relative;
+}
+
+.navbar-header img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 .signinButton {
     width: 300px;
     left: 50%;
