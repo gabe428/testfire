@@ -2,16 +2,16 @@
       
     <div id=signupForm>
         <div>
-            <label for="firstname">First Name</label>
-            <input type="text" class="signforElements, form-control" id="firstname"></input>
+            <label for="first_name">First Name</label>
+            <input type="text" class="signforElements, form-control" id="first_name"></input>
         </div>
         <div>
-            <label for="lastname">Last Name</label>
-            <input type="text" class="signforElements, form-control" id="lastname"></input>
+            <label for="last_name">Last Name</label>
+            <input type="last_name" class="signforElements, form-control" id="last_name"></input>
         </div>
         <div>
-            <label for="InputEmail1">Email address</label>
-            <input type="email" class="signforElements, form-control" id="InputEmail1" aria-describedby="emailHelp">
+            <label for="email">Email address</label>
+            <input type="email" class="signforElements, form-control" id="email" aria-describedby="emailHelp">
             {{!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> --}}
         </div>
         <div>
@@ -46,10 +46,10 @@
                     <h3 class="media-heading">Sign In <small>Prj.Tanjoubi</small></h3>
                     <br>
                     <div>
-                        <label for="InputEmail1">Email address</label><input type="email" class="signforElements, form-control" id="inputEmail2" aria-describedby="emailHelp">
+                        <label for="InputEmail1">Email address</label><input type="email" class="signforElements, form-control" id="email1" aria-describedby="emailHelp">
                     </div>
                     <div>
-                        <label class=passBtn for="password">Password</label><input type="password" class="signforElements, form-control" id="password"></input>
+                        <label class=passBtn for="password">Password</label><input type="password" class="signforElements, form-control" id="password1"></input>
                     </div>
 
  
@@ -60,6 +60,11 @@
                     <p class="text-center"><strong>お客様へ、力の言葉：金持ちように死ぬなら弱い人だよ</strong><br>
                         </p>
                     <br>
+                        <div>
+                            <center>
+                            <button type="button" class="btn btn-default" id="signinBtn2">Sign in</button>
+                            </center>
+                        </div>
                     </center>
                 </div>
                 <div class="modal-footer">
@@ -75,3 +80,4 @@
 
 
 <script src="/public/js/signup.js"></script>
+<script src="/public/js/signin.js"></script>

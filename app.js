@@ -9,6 +9,7 @@ const db = require('./config/db.js');
 const server = require('http').Server(app);
 const bodyParser = require("body-parser");
 const exphbs = require('express-handlebars');
+const router = express.Router();
 
 
 
@@ -40,8 +41,13 @@ app.use("/", function(req, res) {
     res.sendFile(path.join(__dirname, '/views/404.html'));
 
 });
+// new user creation method
+// router.post('/login',login.login);
+// router.post('/login',login.login)
+// app.use('/api', router);
+// app.listen(5000);
 
-
+// for different port
 const arg1 = process.argv[2];
 if (!isNaN(arg1)) {
     PORT = arg1;

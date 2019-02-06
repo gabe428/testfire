@@ -1,13 +1,13 @@
 module.exports = function(db) {
 
- function createUser(username, password, callback) {
+ function createUser(username, password, first_name, last_name, email, callback) {
         const sql = `
           INSERT INTO users
-          (username, password)
+          (username, password, first_name, last_name, email)
           VALUES
-          (?, ?);
+          (?, ?, ?, ?, ?);
         `;
-        db.query(sql, [username, password], function(error, results) {
+        db.query(sql, [username, password, first_name, last_name, email], function(error, results) {
             if (error) {
                 callback(error);
                 return;
