@@ -17,6 +17,7 @@ var login = function(req, res){
   var first_name = req.body.first_name;
   var last_name = req.body.last_name;
   var email = req.body.email;
+  
   models.createUser(username, password, first_name, last_name, email, (err, results) => {
     if (err) {
       console.log(err);
@@ -33,6 +34,8 @@ var login = function(req, res){
 var signin = function(req,res){
   var email = req.body.email;
   var password = req.body.password;
+  console.log(email);
+  console.log(password);
   db.query('SELECT * FROM users WHERE email = ?',[email], function (error, results, fields) {
   if (error) {
     // console.log("error ocurred",error);

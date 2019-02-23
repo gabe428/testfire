@@ -6,10 +6,10 @@ $("#signinBtn2").on("click", function() {
     console.log("yeet");
 
     $.ajax({
-      method: "GET",
+      method: "POST",
       url: "/api/auth/signin",
       data: {
-        email: password,
+        email: email,
         password: password,
       }
     }).fail(function(failure) {
