@@ -1,7 +1,7 @@
 var db = require('../config/db.js');
 var models = require('../models')(db);
 
-var login = function(req, res){
+var signup = function(req, res){
   console.log("done");
   console.log(req.body);
   // var today = new Date();
@@ -31,7 +31,7 @@ var login = function(req, res){
 };
 
 
-var signin = function(req,res){
+var signIn = function(req,res){
   var email = req.body.email;
   var password = req.body.password;
   console.log(email);
